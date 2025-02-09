@@ -46,6 +46,11 @@ int main() {
         cout << "You are still a kid.\n";
     }
 
+    // Another way to recreate the above condition using ternary oprerator.
+    cout << (age >= 18 ? "You are grown up." : "You are still a kid.") << endl;
+    //OR
+    (age % 2 == 0) ? (cout << "EVEN") : (cout << "ODD");
+
     return 0;
 }
 
