@@ -1,8 +1,6 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-// Class Creation
 class Prime {
 public:
     int checkPrime(int number);
@@ -10,15 +8,11 @@ public:
 
 // Function to check if a number is prime
 int Prime::checkPrime(int number) {
-    if (number <= 1) {
-        return 0; // Not a prime number
+    if (number <= 1) return 0;
+    for (int i = 2; i <= number / 2; i++) {
+        if (number % i == 0) return 0;
     }
-    for (int i = 2; i <= sqrt(number); i++) {
-        if (number % i == 0) {
-            return 0; // Not a prime number
-        }
-    }
-    return 1; // Prime number
+    return 1;
 }
 
 int main() {
@@ -26,9 +20,8 @@ int main() {
     cout << "Enter a number: ";
     cin >> number;
 
-    Prime p1; //Object Creation
-
-    if (p1.checkPrime(number)) {
+    Prime checker;
+    if (checker.checkPrime(number)) {
         cout << number << " is a prime number.\n";
     } else {
         cout << number << " is not a prime number.\n";
