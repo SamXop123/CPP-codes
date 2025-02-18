@@ -39,7 +39,9 @@ public:
         else {
             double realPart = -b / (2 * a);
             double imaginaryPart = sqrt(-d) / (2 * a);
-            cout << "Roots are complex: " << realPart << " ± " << imaginaryPart << "i" << endl;
+            cout << "Roots are complex:" << endl;
+            cout << realPart << " + " << imaginaryPart << "i" << endl;
+            cout << realPart << " - " << imaginaryPart << "i" << endl;
         }
     }
 };
