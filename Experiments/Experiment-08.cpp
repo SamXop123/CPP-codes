@@ -1,3 +1,5 @@
+// Write a program to implement destructor using class.
+
 #include <iostream>
 using namespace std;
 
