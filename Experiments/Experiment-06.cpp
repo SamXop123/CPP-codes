@@ -37,7 +37,7 @@ int main() {
     cout << "Sum of 2 numbers: " << calc.add(5, 10) << endl;
     cout << "Sum of 3 numbers: " << calc.add(5, 10, 15) << endl;
 
-    Animal* animalPtr;  // Base class pointer
+    Animal *animalPtr;  // Base class pointer
     Dog d;
     animalPtr = &d;
 
