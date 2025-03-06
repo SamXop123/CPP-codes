@@ -5,8 +5,14 @@ class Item {
     int value;
 
 public:
-    Item(int v) { value = v; }
-    void display() { cout << "Item Value: " << value << endl; }
+    Item(int v) { 
+        value = v; 
+    }
+
+    void display() { 
+        cout << "Item Value: " << value << endl; 
+    }
+
 };
 
 // container class
