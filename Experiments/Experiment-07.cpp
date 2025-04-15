@@ -22,8 +22,8 @@ public:
 };
 
 int main() {
-    Student s1("Sameer", 18);
-    Student s2("ABCXYZ", 18);
+    Student s1("James", 18);
+    Student s2("Mike", 18);
 
     s1.display();
     s2.display();
