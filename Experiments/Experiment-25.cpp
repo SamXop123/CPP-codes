@@ -38,7 +38,7 @@ public:
     }
 };
 
-// ✨ Saving Account
+// Saving Account
 class SavingAccount : public Account {
 public:
     SavingAccount(string name, int accNo, double bal)
@@ -82,8 +82,7 @@ public:
 };
 
 int main() {
-    // Let's make it pookie and test both account types!
-    SavingAccount sa("Pookie Girl", 1001, 5000.0);
+    SavingAccount sa("Simon", 1001, 5000.0);
     sa.computeCompoundInterest(5.0, 2);  // 5% interest for 2 years
     sa.withdraw(1000);
     sa.display();
