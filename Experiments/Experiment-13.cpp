@@ -1,4 +1,6 @@
 
+// Write a program to implement virtual and pure virtual function.
+
 #include <iostream>
 using namespace std;
 
