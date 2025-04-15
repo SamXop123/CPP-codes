@@ -103,18 +103,18 @@ int main() {
     CurrAcct ca;
 
     // Initialize accounts
-    sa.initialize("Pookie Girl", 1001, "Savings", 5000);
-    ca.initialize("Sameer", 2002, "Current", 1200);
+    sa.initialize("Alice", 1001, "Savings", 5000);
+    ca.initialize("John", 2002, "Current", 1200);
 
     // Operations on Savings Account
-    cout << "\n🌸 Savings Account Operations 🌸\n";
+    cout << "\n Savings Account Operations \n";
     sa.deposit(1000);
     sa.computeInterest(5.0, 2); // 5% interest for 2 years
     sa.withdraw(2000);
     sa.displayBalance();
 
     // Operations on Current Account
-    cout << "\n💼 Current Account Operations 💼\n";
+    cout << "\n Current Account Operations \n";
     ca.deposit(500);
     ca.withdraw(1800); // Should impose penalty
     ca.displayBalance();
