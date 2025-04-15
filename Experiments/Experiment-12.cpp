@@ -1,3 +1,6 @@
+
+// Write a program to implement abstract class.
+
 #include <iostream>
 using namespace std;
 
