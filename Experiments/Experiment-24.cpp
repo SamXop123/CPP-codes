@@ -50,6 +50,6 @@ int main() {
         cin >> playAgain;
     } while (playAgain == 'y' || playAgain == 'Y');
 
-    cout << "Thanks for playing, cutie! 💖" << endl;
+    cout << "Thanks for playing!" << endl;
     return 0;
 }
