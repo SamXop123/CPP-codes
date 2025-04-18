@@ -1,3 +1,5 @@
+// Write a program to find prime number entered by user with the help of class
+
 #include <iostream>
 using namespace std;
 
