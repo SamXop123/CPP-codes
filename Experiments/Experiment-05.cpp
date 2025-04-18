@@ -1,3 +1,5 @@
+// Write a program to implement inline function
+
 #include <iostream>
 
 using namespace std;
