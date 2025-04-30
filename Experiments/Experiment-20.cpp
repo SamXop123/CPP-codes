@@ -1,0 +1,1 @@
+// Write a program to implement hybrid inheritance using class.
