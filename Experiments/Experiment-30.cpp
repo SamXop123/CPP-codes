@@ -31,7 +31,7 @@ bool compareByAuthor(const Book &b1, const Book &b2) {
 }
 
 int main() {
-    ifstream inputFile("books.txt");
+    ifstream inputFile("data.txt");
     if (!inputFile) {
         cerr << "Could not open the file!" << endl;
         return 1;
