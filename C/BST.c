@@ -26,6 +26,23 @@ struct Node* insert(struct Node* root, int value) {
     return root;
 }
 
+// Iterative search
+struct Node* search(Node* root, int key) {
+    Node* current = root;
+    
+    while (current != NULL) {
+        if (key == current->data) {
+            return current;
+        } else if (key < current->data) {
+            current = current->left;
+        } else {
+            current = current->right;
+        }
+    }
+    
+    return NULL; // Not found
+}
+
 // Inorder Traversal
 void inorder(struct Node* root) {
     if (root != NULL) {
@@ -47,5 +64,16 @@ int main() {
 
     printf("Inorder Traversal: ");
     inorder(root);
+
+    // Searching
+    int value = 90;
+    result = search(root, value);
+    
+    if (result != NULL) {
+        printf("Value %d found in BST.\n", key);
+    } else {
+        printf("Value %d not found in BST.\n", key);
+    }
+    
     return 0;
 }
